@@ -25,6 +25,7 @@ var randomComic = function(){
   var url = "http://gateway.marvel.com:80/v1/public/comics/" + randomNumber + "?apikey=2331b1ccc2a9411ca23da8c89a441eb2";
   var hash = ts + PRIV_KEY + API_KEY;
   url += "&ts="+ts+"&hash="+hash;
+  console.log(url);
   makeRequest(url, requestComplete);
 };
 
